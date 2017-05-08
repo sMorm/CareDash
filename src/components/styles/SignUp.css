@@ -1,0 +1,65 @@
+.SignUpContainer {
+  text-align: center;
+}
+
+.SignUpContainer h1 {
+  color: #AAA;
+  font-size: 30px;
+}
+
+.SignUpForm {
+  max-width: 1200px;
+  width: 80%;
+  margin: auto;
+}
+
+.SignUpForm form {
+  padding: 20px;
+  max-width: 400px;
+  background-color: #F0F0F0;
+  margin: 0 auto;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.SignUpForm input{
+  display: block;
+  padding: 10px;
+  border: none;
+  max-width: 300px;
+  width: 50%;
+  border-bottom: solid 3px lightblue;
+  margin: 5px auto;
+  border-radius: 0;
+}
+
+.SignUpForm button {
+  max-width: 100px;
+  padding: 7px 10px;
+  font-size: 15px;
+  color: white;
+  background-color: #34D027;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 30%;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.SignUpContainer hr {
+  width: 100%;
+  margin-top: 2rem;
+  border: solid 1px #DDD;
+}
+
+
+@media (max-width: 800px){
+  .SignUpContainer {
+    width: 100%;
+  }
+
+  .SignUpForm form{
+    width: 90%;
+  }
+}

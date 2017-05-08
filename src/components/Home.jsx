@@ -4,6 +4,7 @@ import Typist from 'react-typist';
 
 // Components
 import Headlines from './Headlines.jsx'
+import SignUp from './SignUp.jsx'
 
 // Styles
 import './styles/Home.css'
@@ -73,6 +74,7 @@ class Home extends Component {
           </div>
         </div>
         <Headlines />
+        <SignUp />
       </div>
     );
   }
