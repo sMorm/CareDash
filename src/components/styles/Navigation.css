@@ -1,0 +1,108 @@
+/*
+  The reason why mobile styles have difference classes is because
+  it's easier to manage states of element with React queries.
+*/
+
+.NavContainer {
+  width: 100%;
+  height: 50px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+}
+
+.Nav {
+  display: flex;
+  font-size: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.Nav img {
+  height: 40px;
+}
+
+/*
+  The styles for a NavLinks and a normal link behaves differently
+  in the css, which is why they have separate classes
+*/
+.NavLink {
+  line-height: 48px;
+  height: 50px;
+  text-decoration: none;
+  color: #555;
+  margin-left: 1.5rem;
+}
+
+.NavLink.active {
+  border-bottom: solid 3px #008798;
+
+}
+
+.NavLink.Drop {
+  line-height: normal;
+  height: 20px;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.DropDownContainer ul {
+  border-radius: 5px;
+  background-color: white;
+  width: 95%;
+  margin: 0 auto;
+  padding: 5px 20px;
+  border: solid 1px #EEE;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+  animation: fade-down 0.5s forwards;
+}
+
+.DropDownContainer li {
+  list-style: none;
+  text-align: left;
+  color: #008798;
+  margin: 20px 0px;
+  padding: 3px;
+}
+
+ /*Mobile Styles*/
+
+.MobileTab{
+  postion: absolute;
+  height: 20px;
+  margin-top: 1rem ;
+  margin-right: 0.5rem;
+  float: right;
+}
+
+.MobileLogo {
+  margin-top: 0.55rem;
+  height: 30px;
+}
+
+.MobileDropDown {
+  position: fixed;
+  border-radius: 5px;
+  width: 50%;
+  background-color: white;
+  z-index: 1;
+  right: 0;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+
+.MobileDropDown li {
+  padding: 0;-webkit-padding-start: 0;
+  list-style-type: none;
+  margin: 10px 0px;
+  animation: fade-down 0.5s forwards;
+}

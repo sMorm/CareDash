@@ -1,0 +1,6 @@
+/*Includes most of the animations and keyframes*/
+
+@keyframes fade-down {
+  0% { transform: translateX(-5%); opacity: 0;}
+  100% { transform: translateX(0%); opacity: 1;}
+}
