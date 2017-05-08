@@ -1,0 +1,22 @@
+.Typist .Cursor {
+  display: inline-block; }
+  .Typist .Cursor--blinking {
+    opacity: 1;
+    font-size: 30px;
+    animation: blink 1s linear infinite; }
+
+@media (max-width: 800px){
+  .Typist .Cursor {
+  display: inline-block; }
+  .Typist .Cursor--blinking {
+    font-size: 20px;
+ }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }

@@ -1,0 +1,46 @@
+.HeadlineContainer h1 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  color: #AAA;
+}
+.HeadlineFlexContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.HeadlineFlexContainer span {
+  max-width: 300px;
+  min-width: 200px;
+  background-color: white;
+  width: 30%;
+  text-align: center;
+}
+
+.HeadlineContainer hr {
+  width: 90%;
+  margin-top: 2rem;
+  border: solid 1px #DDD;
+}
+.HeadlineFlexContainer img {
+  height: 100px;
+}
+
+@media (min-width: 1200px){
+  .HeadlineFlexContainer img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 800px) {
+  .HeadlineFlexContainer {
+    width: 100%;
+  }
+  .HeadlineFlexContainer span {
+    width: 100%;
+  }
+}

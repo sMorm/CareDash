@@ -1,0 +1,140 @@
+/* 
+  Logo colors
+  - Left side of heart: #00a4b1;
+  - Left Darker: #00829e;
+  - Right Lighter: #b5cc43;
+  - Right Darker: #80a000;
+*/
+.HomeHeader {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  background: rgba(0,134,152,1);
+  background: -moz-linear-gradient(45deg, rgba(0,134,152,1) 0%, rgba(0,136,151,1) 30%, rgba(8,186,199,1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,134,152,1)), color-stop(30%, rgba(0,136,151,1)), color-stop(100%, rgba(8,186,199,1)));
+  background: -webkit-linear-gradient(45deg, rgba(0,134,152,1) 0%, rgba(0,136,151,1) 30%, rgba(8,186,199,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(0,134,152,1) 0%, rgba(0,136,151,1) 30%, rgba(8,186,199,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(0,134,152,1) 0%, rgba(0,136,151,1) 30%, rgba(8,186,199,1) 100%);
+  background: linear-gradient(45deg, rgba(0,134,152,1) 0%, rgba(0,136,151,1) 30%, rgba(8,186,199,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008698', endColorstr='#08bac7', GradientType=1 );
+}
+
+.HomeText {
+  width: 90%;
+  text-align: center;
+}
+
+.HomeText.Typist {
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  margin: 10px auto;
+  margin-top: 5%;
+}
+
+.HomeText h1{
+  margin-top: 5%;
+  color: white;
+  font-weight: 700;
+}
+
+.HomeText p {
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  max-width: 800px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.SearchForm {
+  margin-top: 2rem;
+}
+
+.SearchForm input {
+  max-width: 400px;
+  height: 30px;
+  padding: 5px;
+  font-size: 15px;
+  border: none;
+  width: 30%;
+}
+
+.SearchForm.left {
+  border-right: solid 2px #CCC;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px
+}
+
+
+.SearchForm button {
+  position: relative;
+  top: 7px;
+  height: 40px;
+  background-color: #34D027;
+  border: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.SearchForm img {
+  height: 30px;
+}
+
+@media (min-width: 1200px) {
+  .HomeHeader{
+    height: 350px;
+  }
+}
+
+@media (max-width: 800px) {
+  .HomeHeader {
+    font-size: 12px;
+  }
+
+  .HomeHeader p {
+    font-size: 16px;
+    width: 100%;
+    line-height: 20px;
+  }
+
+  .HomeText.Typist {
+    font-size: 20px;
+  }
+
+  .SearchContainer {
+    margin-top: 1.5rem;
+  }
+
+  .SearchForm {
+    display: block;
+    margin: 0px auto;
+    border-radius: 0;
+  }
+  .SearchForm input {
+    width: 70%;
+    border-radius: 0;
+  }
+
+  .SearchForm.left {
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-right: none;
+    border-bottom: solid 1px #CCC;
+  }
+  .SearchForm.right {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .SearchForm button {
+    border-radius: 5px;
+    max-width: 100px;
+    width: 30%;
+  }
+  .SearchForm img {
+  height: 25px;
+  }
+}
+
+

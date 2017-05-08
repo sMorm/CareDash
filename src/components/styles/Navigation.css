@@ -73,6 +73,12 @@
   padding: 3px;
 }
 
+@media (min-width: 1200px){
+  .NavLink {
+    margin-left: 3rem;
+  }
+}
+
  /*Mobile Styles*/
 
 .MobileTab{
