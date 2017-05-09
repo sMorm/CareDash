@@ -170,7 +170,7 @@ class SignUp extends Component {
                   )
               }
             </div>
-            <hr />
+            <div style={{height: '20px'}} />
           </div>
           )
       }
