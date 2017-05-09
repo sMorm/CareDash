@@ -16,7 +16,10 @@ import Footer from './components/Footer.jsx'
 // Styles
 import './components/styles/Animations.css'
 
-
+/*
+  Most parent component, BrowserRouter manages all the
+  URLs, routes, and context.
+*/
 
 class Routes extends Component {
   render() {

@@ -90,6 +90,7 @@
   margin-top: 1rem ;
   margin-right: 0.5rem;
   float: right;
+  cursor: pointer;
 }
 
 .MobileLogo {
@@ -104,7 +105,7 @@
   background-color: white;
   z-index: 1;
   right: 0;
-  animation: fade-in 0.5s forwards;
+  animation: fade-down 0.2s forwards;
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
   -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
@@ -116,4 +117,13 @@
   text-decoration: none;
   color: #00829e;
   margin: 15px 0px;
+}
+
+.DropDownLinks.Desktop {
+  padding: 0;
+  margin: 0;
+}
+
+.DropDownLinks:hover {
+  text-decoration: underline;
 }

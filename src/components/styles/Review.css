@@ -1,0 +1,85 @@
+.ReviewContainer {
+  max-width: 1200px;
+  width: 80%;
+  margin: auto;
+}
+
+.ReviewContainer h1 {
+  color: #00829e;
+  font-weight: 300;
+  text-align: center;
+}
+
+.ReviewContainer hr {
+  width: 80%;
+  border: solid 1px #CCC;
+}
+
+.DoctorProfile {
+  display: flex;
+  justify-content: space-around;
+  background-color: #F7F7F7;
+  padding: 20px;
+  width: 50%;
+  margin: 15px auto;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+}
+
+.DoctorProfile img {
+  height: 75px;
+  margin-top: 0px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+  animation: profile-before 0.5s forwards;
+}
+
+.DoctorProfile img:hover {
+  animation: profile-after 0.5s forwards;
+}
+
+.DoctorInfo {
+  line-height: 10px;
+  text-align: left;
+  width: 30%;
+  min-width: 200px;
+  color: #00829e;
+}
+
+.DoctorInfo p {
+  color: #888;
+}
+
+@media (max-width: 800px){
+  .ReviewContainer {
+    width: 100%;
+  }
+  .ReviewContainer h1 {
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .ReviewContainer hr {
+    display: none;
+  }
+  .DoctorInfo {
+    line-height: 5px;
+    text-overflow: ellipsis;
+    min-width: 170px;
+    width: 30%;
+  }
+  .DoctorInfo h3 {
+    font-size: 18px;
+  }
+  .DoctorInfo p {
+    font-size: 14px;
+  }
+  .DoctorProfile {
+    width: 80%;
+  }
+  .DoctorProfile img {
+    height: 60px;
+  }
+}

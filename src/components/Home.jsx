@@ -12,6 +12,14 @@ import './styles/Typist.css'
 
 // Media
 import SearchIcon from './media/searchicon.svg'
+
+/*
+  The home component, the state manages what the user 
+  searches, since there's no API for use right now,
+  all it does is query the user's inputs.
+*/
+
+
 class Home extends Component {
   constructor(){
     super();

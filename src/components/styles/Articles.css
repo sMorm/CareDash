@@ -13,6 +13,7 @@
 .SampleArticle {
   width: 70%;
   margin: 0 auto;
+  max-width: 700px;
 }
 .SampleArticle h2{
   position: absolute;
@@ -37,6 +38,7 @@
   }
   .SampleArticle {
     width: 100%;
+    max-width: 500px;
   }
   .SampleArticle h2{
     padding: 10px;

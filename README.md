@@ -2,8 +2,11 @@
 
 Take home assignment for CareDash.
 
+`NOTE`: All logo designs and pictures we're created and taken by me.
+
 ## Tools
 - [React](https://facebook.github.io/react/), the main front-end library
+- [Sketch](https://sketchapp.com/), a powerful tool to create scalable design
 - [Express](https://expressjs.com/), web framework, used to serve the final build on Heroku or AWS
 - [React Router](https://www.npmjs.com/package/react-router), the standard routing library for React
 - [React Media](https://www.npmjs.com/package/react-media), manages media queries in React components
@@ -12,7 +15,7 @@ Take home assignment for CareDash.
 - [Typist](https://github.com/jstejada/react-typist), configurable typing animations
 
 ## Demo
-NOTE: Because GitHub has multiple buckets for each repository, React Router doesn't behave very well unless it's hosted independently on one bucket, therefore refreshing on any routes other than the homepage will result in a 404.
+`NOTE`: Because GitHub has multiple buckets for each repository, React Router doesn't behave very well unless it's hosted independently on one bucket, therefore refreshing on any routes other than the homepage will result in a 404.
 
 Demo [here](https://smorm.github.io/CareDash/)
 

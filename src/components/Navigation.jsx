@@ -1,110 +1,56 @@
 // Dependencies
 import React, { Component } from 'react';
 import Media from 'react-media';
-import { NavLink, Link } from 'react-router-dom';
+
+// Components
+import NavMobile from './NavMobile.jsx';
+import NavDesktop from './NavDesktop.jsx';
 
 // Styles
 import './styles/Navigation.css'
 
-// Media
-import Logo from './media/caredash-logo-heart.png';
-import NavTab from './media/navtab.svg';
+
+/*
+  The navigation bar that manages whether the modal
+  should be on mobile or desktop, or simply when it's
+  opened or closed.
+*/
 
 class Navigation extends Component {
   constructor(){
     super();
     this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
     this.toggleDropDown = this.toggleDropDown.bind(this);
+    this.closeDropDown = this.closeDropDown.bind(this);
     this.state = {
       showMobileMenu: false,
       showDropDown: false
     }
   }
-  toggleMobileMenu(){
+  toggleMobileMenu() {
     this.setState({ showMobileMenu: !this.state.showMobileMenu })
   }
   toggleDropDown() {
     this.setState({ showDropDown: !this.state.showDropDown })
+
+  }
+  closeDropDown() {
+    this.setState({ showDropDown: false, showMobileMenu: false })
   }
   render(){
     return (
       <div className="NavContainer">
       <Media query='(max-width: 800px)'>
         {matches => matches
-          ? (
-              <div className="MobileNavContainer">
-                <NavLink to="/CareDash">
-                  <img src={ Logo } alt="CareDash Logo with Heart" className="MobileLogo"/>
-                </NavLink>
-                <img 
-                src={ NavTab }
-                alt="Drop down mobile menu logo"
-                className="MobileTab"
-                onClick={this.toggleMobileMenu}/>
-                {
-                  this.state.showMobileMenu
-                  ? (
-                      <div className="MobileDropDown">
-  
-                          <Link 
-                          to="/CareDash" 
-                          className="DropDownLinks" 
-                          onClick={this.toggleMobileMenu}>
-                            Home
-                          </Link>
-
-                          <Link 
-                          to="/articles" 
-                          className="DropDownLinks"
-                          onClick={this.toggleMobileMenu}>
-                            Articles
-                          </Link>
-                          
-                          <Link 
-                          to="/review-your-doctor" 
-                          className="DropDownLinks"
-                          onClick={this.toggleMobileMenu}>
-                            Write a Review
-                          </Link>
-                      </div>
-                    )
-                  : null
-                }
-              </div>
-            )
+          ? <NavMobile
+            toggleMobileMenu={this.toggleMobileMenu}
+            closeDropDown={this.closeDropDown}
+            showMobileMenu={this.state.showMobileMenu} />
            
-          : (
-              <div className="Nav">
-                <NavLink to="/CareDash">
-                  <img src={ Logo } alt="CareDash Logo with Heart"/>
-                </NavLink>
-                <div  className="DropDownContainer">
-                  <p onClick={this.toggleDropDown} className="NavLink Drop">
-                    Ratings & Reviews
-                  </p>
-                  {
-                    this.state.showDropDown 
-                    ? (
-                          <ul>
-                            <li>Primary Care</li>
-                            <li>Dentist</li>
-                            <li>Pediatrician</li>
-                            <li>OG/GYN</li>
-                            <li>Optometrist</li>
-                            <li>All Doctors</li>
-                          </ul>
-                      )
-                    : null
-                  }
-                </div>
-                <NavLink to="/articles" className="NavLink" activeClassName="NavLink active">
-                  Health & Wellness Articles
-                </NavLink>
-                <NavLink to="/review-your-doctor" className="NavLink" activeClassName="NavLink active">
-                  Leave a Review
-                </NavLink>
-              </div>
-            )
+          : <NavDesktop
+            toggleDropDown={this.toggleDropDown}
+            closeDropDown={this.closeDropDown}
+            showDropDown={this.state.showDropDown} />
         }
       </Media>
       </div>

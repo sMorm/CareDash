@@ -9,6 +9,12 @@ import './styles/Footer.css';
 import Facebook from './media/facebook.jpg';
 import Twitter from './media/twitter.jpg';
 import Instagram from './media/instagram.jpg'
+
+/*
+  Stateless Component that returns the footer
+*/
+
+
 const Footer = () => {
   return(
     <div className="FooterBackground">

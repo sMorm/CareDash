@@ -55,6 +55,11 @@
   cursor: pointer;
   -webkit-appearance: none;
 }
+
+.SignUpForm.Login {
+  background-color: #008798;
+}
+
 .SignUpForm p {
   color: red;
   animation: pop 1s forwards;
@@ -92,13 +97,21 @@
 .MemberPortal:hover {
   text-decoration: underline;
 }
+
 @media (max-width: 800px){
   .SignUpContainer {
     width: 100%;
   }
 
+  .SignUpForm {
+    width: 100%;
+  }
+
   .SignUpForm form{
-    width: 90%;
+    padding: 10px 0px;
+    border: none;
+
+    width: 100%;
   }
 
   .SignUpSuccess {

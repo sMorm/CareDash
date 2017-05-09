@@ -4,8 +4,6 @@ import { ThreeBounce } from 'better-react-spinkit'
 import './styles/Loading.css'
 
 /*
-  @Loading
-
   Renders loading animation,
 */
 

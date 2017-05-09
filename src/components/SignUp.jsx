@@ -8,6 +8,16 @@ import './styles/SignUp.css'
 // Media
 import HeartLogo from './media/heart-logo.jpg';
 
+/*
+  The Registration form consists of various states to determine
+  if the inputs are valid. It also has a state to manage whether
+  if it's an existing user or a new member attempting to register.
+
+  This Component takes no props, but SHOULD push routes if there
+  was actually a registration process that forces us to make a POST 
+  request to the API and verify whether the username is available.
+*/
+
 class SignUp extends Component {
   constructor(){
     super();
@@ -110,56 +120,55 @@ class SignUp extends Component {
                     onClick={this.memberLogin}>
                       New user?
                   </div>
-                  <button> Login </button>
+                  <button className="SignUpForm Login"> Login </button>
                   </form>
                   )
                 : (
                   <form onSubmit={this.onSubmit}>
-                  <input 
-                  name="firstName"
-                  type="text"
-                  onChange={this.onChange}
-                  onSubmit={this.onSubmit}
-                  placeholder="First Name"
-                  required/>
-                  <input 
-                  name="lastName"
-                  type="text"
-                  onChange={this.onChange}
-                  onSubmit={this.onSubmit}
-                  placeholder="Last Name"
-                  required/>
-                  <input 
-                  name="email"
-                  type="email"
-                  onChange={this.onChange}
-                  onSubmit={this.onSubmit}
-                  placeholder="Email"
-                  required/>
-                  <input 
-                  name="password"
-                  type="password"
-                  onChange={this.onChange}
-                  onSubmit={this.onSubmit}
-                  placeholder="Password"
-                  required/>
-                  <input 
-                  name="confirmPassword"
-                  type="password"
-                  placeholder="Confirm Password"
-                  onChange={this.onChange}
-                  onSubmit={this.onSubmit}
-                  required/>
-                  <div 
-                  className="MemberPortal"
-                  onClick={this.memberLogin}>
-                    Already a member?
-                  </div>
-                  <button> Sign Up </button>
-                </form>
+                    <input 
+                    name="firstName"
+                    type="text"
+                    onChange={this.onChange}
+                    onSubmit={this.onSubmit}
+                    placeholder="First Name"
+                    required/>
+                    <input 
+                    name="lastName"
+                    type="text"
+                    onChange={this.onChange}
+                    onSubmit={this.onSubmit}
+                    placeholder="Last Name"
+                    required/>
+                    <input 
+                    name="email"
+                    type="email"
+                    onChange={this.onChange}
+                    onSubmit={this.onSubmit}
+                    placeholder="Email"
+                    required/>
+                    <input 
+                    name="password"
+                    type="password"
+                    onChange={this.onChange}
+                    onSubmit={this.onSubmit}
+                    placeholder="Password"
+                    required/>
+                    <input 
+                    name="confirmPassword"
+                    type="password"
+                    placeholder="Confirm Password"
+                    onChange={this.onChange}
+                    onSubmit={this.onSubmit}
+                    required/>
+                    <div 
+                    className="MemberPortal"
+                    onClick={this.memberLogin}>
+                      Already a member?
+                    </div>
+                    <button> Sign Up </button>
+                  </form>
                   )
               }
-              
             </div>
             <hr />
           </div>
