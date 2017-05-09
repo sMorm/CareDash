@@ -10,4 +10,4 @@ app.get('/', function (req, res) {
 
 console.log("Serving build at Port 5000.");
 
-app.listen(5000);
+app.listen(process.env.PORT || 5000)

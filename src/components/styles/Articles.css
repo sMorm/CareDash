@@ -28,10 +28,6 @@
   width: 100%;
 }
 
-.SampleArticle.Two h2 {
-  background-color: salmon;
-  color: white;
-}
 @media (max-width: 800px) {
   .ArticleContainer {
     width: 100%;

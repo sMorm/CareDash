@@ -33,7 +33,7 @@ class Navigation extends Component {
         {matches => matches
           ? (
               <div className="MobileNavContainer">
-                <NavLink to="/">
+                <NavLink to="/CareDash">
                   <img src={ Logo } alt="CareDash Logo with Heart" className="MobileLogo"/>
                 </NavLink>
                 <img 
@@ -47,7 +47,7 @@ class Navigation extends Component {
                       <div className="MobileDropDown">
   
                           <Link 
-                          to="/" 
+                          to="/CareDash" 
                           className="DropDownLinks" 
                           onClick={this.toggleMobileMenu}>
                             Home
@@ -75,7 +75,7 @@ class Navigation extends Component {
            
           : (
               <div className="Nav">
-                <NavLink to="/">
+                <NavLink to="/CareDash">
                   <img src={ Logo } alt="CareDash Logo with Heart"/>
                 </NavLink>
                 <div  className="DropDownContainer">

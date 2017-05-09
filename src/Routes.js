@@ -26,8 +26,10 @@ class Routes extends Component {
           <Navigation />
           <Switch>
             <Route exact path="/" component={ Home } />
+            <Route exact path="/CareDash" component={ Home } />
             <Route exact path="/articles" component={ Articles } />
             <Route path="/review-your-doctor" component={ Review } />
+            <Route path="*" component={ Home } />
           </Switch>
           <Footer />
         </div>

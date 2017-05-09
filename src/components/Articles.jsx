@@ -38,7 +38,7 @@ class Articles extends Component {
               <img src={SampleImage} alt="person holding phone"/>
             </div>
             <div style={{height: '50px'}}/>
-            <div className="SampleArticle Two">
+            <div className="SampleArticle">
               <h2>Staying Healthy in the City</h2>
               <img src={SampleImage2} alt="City of Boston at Night"/>
             </div>

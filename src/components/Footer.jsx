@@ -17,7 +17,7 @@ const Footer = () => {
           <h3>CareDash</h3>
           <hr/>
           <div className="LinkContainer">
-            <Link to="/" className="FooterLink">Home</Link>
+            <Link to="/CareDash" className="FooterLink">Home</Link>
             <Link to="/articles" className="FooterLink">Articles</Link>
             <Link to="/review-your-doctor" className="FooterLink">Write a Review</Link>
           </div>
