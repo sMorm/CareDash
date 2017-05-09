@@ -50,9 +50,9 @@ const Footer = () => {
           target="_blank">
             <img src={Instagram} alt="Instagram logo"/>
           </a>
-
         </span>
       </div>
+
     </div>
   );
 }

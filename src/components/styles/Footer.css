@@ -8,7 +8,13 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 
+}
+
+.FooterContainer hr {
+  border: solid 1px #CCC;
 }
 
 .LinkContainer {
@@ -37,6 +43,7 @@
   border-radius: 50%;
   margin: 10px 5px;
 }
+
 
 @media (max-width: 800px) {
   .FooterContainer {

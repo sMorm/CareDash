@@ -65,6 +65,11 @@
   width: 30%;
 }
 
+.SearchForm input:focus {
+  outline: none;
+  animation: pop 0.5s forwards;
+}
+
 .SearchForm.left {
   border-right: solid 2px #CCC;
   border-bottom-left-radius: 5px;
@@ -120,6 +125,10 @@
   .SearchForm input {
     width: 70%;
     border-radius: 0;
+  }
+  
+  .SearchForm input:focus {
+    animation: none;
   }
 
   .SearchForm.left {

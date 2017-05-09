@@ -34,9 +34,9 @@
   height: 100px;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1000px){
   .HeadlineFlexContainer img {
-    height: 150px;
+    height: 130px;
   }
 }
 
