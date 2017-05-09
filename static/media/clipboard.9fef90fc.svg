@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Desktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop">
+            <rect id="Rectangle-2" fill="#E6D9AF" x="171" y="53" width="681.643587" height="956.762611" rx="25"></rect>
+            <rect id="Rectangle-3" fill="#FFFFFF" x="236" y="132" width="551.806713" height="799.760817"></rect>
+            <text id="X" fill="#847C7C" font-family="Arial-Black, Arial Black" font-size="120" font-weight="700">
+                <tspan x="325" y="333">X</tspan>
+            </text>
+            <rect id="Rectangle-4" fill="#E7ACAC" x="268" y="14" width="488.047534" height="79.0277487"></rect>
+            <text id="R" fill="#847C7C" font-family="Arial-Black, Arial Black" font-size="120" font-weight="700">
+                <tspan x="268" y="265">R</tspan>
+            </text>
+            <rect id="Rectangle-5" fill="#D8D8D8" x="268" y="406" width="194.755311" height="41.0944293" rx="20.5472147"></rect>
+            <rect id="Rectangle-6" fill="#E0DEDE" x="270" y="532" width="488.047534" height="31.6110995" rx="15.8055497"></rect>
+            <rect id="Rectangle-6" fill="#E0DEDE" x="268" y="591" width="488.047534" height="31.6110995" rx="15.8055497"></rect>
+            <rect id="Rectangle-6" fill="#E0DEDE" x="268" y="650" width="333.866247" height="31.6110995" rx="15.8055497"></rect>
+            <rect id="Rectangle-6" fill="#E0DEDE" x="268" y="765" width="488.047534" height="31.6110995" rx="15.8055497"></rect>
+            <rect id="Rectangle-6" fill="#E0DEDE" x="268" y="824" width="438.199449" height="31.6110995" rx="15.8055497"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Desktop</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M281,243 L748,243 L748,899.003633 C748,920.540732 730.545365,938 708.999577,938 L320.000423,938 C298.461084,938 281,920.537952 281,899.003633 L281,243 Z" id="path-1"></path>
+        <rect id="path-2" x="281" y="375" width="468" height="436"></rect>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop">
+            <rect id="Rectangle-4" fill="#FFFFFF" x="215" y="51" width="595" height="179"></rect>
+            <g id="Rectangle-5">
+                <use fill="#F4FF68" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <path stroke="#D4D4D4" stroke-width="1" d="M281.5,243.5 L747.5,243.5 L747.5,899.003633 C747.5,920.266818 730.266994,937.5 708.999577,937.5 L320.000423,937.5 C298.73818,937.5 281.5,920.262763 281.5,899.003633 L281.5,243.5 Z"></path>
+            </g>
+            <path d="M209,59.0017756 C209,47.9550999 217.96248,39 229.001522,39 L795.998478,39 C807.045014,39 816,47.9627146 816,59.0017756 L816,222.998224 C816,234.0449 807.03752,243 795.998478,243 L229.001522,243 C217.954986,243 209,234.037285 209,222.998224 L209,59.0017756 Z M230,75.0039196 L230,206.99608 C230,218.054802 238.956478,227 250.004853,227 L774.995147,227 C786.039705,227 795,218.04394 795,206.99608 L795,75.0039196 C795,63.9451983 786.043522,55 774.995147,55 L250.004853,55 C238.960295,55 230,63.9560599 230,75.0039196 Z" id="Combined-Shape" fill="#DAD9D9"></path>
+            <rect id="Rectangle-3" fill="#DAD9D9" x="274" y="49" width="21" height="184"></rect>
+            <rect id="Rectangle-3" fill="#DAD9D9" x="502" y="48" width="21" height="184"></rect>
+            <rect id="Rectangle-3" fill="#DAD9D9" x="394" y="49" width="21" height="184"></rect>
+            <rect id="Rectangle-3" fill="#DAD9D9" x="611" y="49" width="21" height="184"></rect>
+            <rect id="Rectangle-3" fill="#DAD9D9" x="731" y="49" width="21" height="184"></rect>
+            <g id="Rectangle-6">
+                <use fill="#F9F9F9" fill-rule="evenodd" xlink:href="#path-2"></use>
+                <rect stroke="#E5E5E5" stroke-width="1" x="281.5" y="375.5" width="467" height="435"></rect>
+            </g>
+            <rect id="Rectangle-7" fill="#D8D8D8" x="326" y="512" width="246" height="71" rx="8"></rect>
+            <rect id="Rectangle" fill="#E4E0E0" x="367" y="620" width="332" height="35" rx="8"></rect>
+            <rect id="Rectangle" fill="#E4E0E0" x="367" y="684" width="332" height="35" rx="8"></rect>
+            <rect id="Rectangle" fill="#E4E0E0" x="367" y="755" width="246" height="35" rx="8"></rect>
+        </g>
+    </g>
+</svg>
