@@ -4,6 +4,8 @@
   - Left Darker: #00829e;
   - Right Lighter: #b5cc43;
   - Right Darker: #80a000;
+
+  The gradient looks pretty funky because it was from a gradient generator
 */
 .HomeHeader {
   display: flex;
@@ -18,6 +20,7 @@
   background: -ms-linear-gradient(45deg, rgba(0,134,152,1) 0%, rgba(0,136,151,1) 30%, rgba(8,186,199,1) 100%);
   background: linear-gradient(45deg, rgba(0,134,152,1) 0%, rgba(0,136,151,1) 30%, rgba(8,186,199,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008698', endColorstr='#08bac7', GradientType=1 );
+  animation: fade-in 1s forwards;
 }
 
 .HomeText {
@@ -71,15 +74,17 @@
 
 .SearchForm button {
   position: relative;
-  top: 7px;
+  top: 2px;
   height: 40px;
+  width: 40px;
   background-color: #34D027;
   border: none;
+  cursor: pointer;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
 }
 .SearchForm img {
-  height: 30px;
+  height: 20px;
 }
 
 @media (min-width: 1200px) {
@@ -130,11 +135,12 @@
   }
   .SearchForm button {
     border-radius: 5px;
-    max-width: 100px;
-    width: 30%;
+    height: 30px;
+    max-width: 80px;
+    width: 20%;
   }
   .SearchForm img {
-  height: 25px;
+  height: 20px;
   }
 }
 

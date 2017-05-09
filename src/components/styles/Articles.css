@@ -1,0 +1,47 @@
+.ArticleContainer {
+  text-align: center;
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  animation: fade-down 1s forwards;
+}
+
+.ArticleContainer h1 {
+  color: #00829e;
+}
+
+.SampleArticle {
+  width: 70%;
+  margin: 0 auto;
+}
+.SampleArticle h2{
+  position: absolute;
+  z-index: 0;
+  color: black;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 5%;
+  background-color: rgba(215, 255, 0, 1);
+  padding: 10px;
+}
+.SampleArticle img {
+  width: 100%;
+}
+
+.SampleArticle.Two h2 {
+  background-color: salmon;
+  color: white;
+}
+@media (max-width: 800px) {
+  .ArticleContainer {
+    width: 100%;
+  }
+  .SampleArticle {
+    width: 100%;
+  }
+  .SampleArticle h2{
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10%;
+  }
+}

@@ -1,9 +1,10 @@
 .SignUpContainer {
   text-align: center;
+  animation: fade-down 1s forwards;
 }
 
 .SignUpContainer h1 {
-  color: #AAA;
+  color: #00829e;
   font-size: 30px;
 }
 
@@ -42,7 +43,7 @@
   border: none;
   border-radius: 5px;
   margin-top: 10px;
-  width: 30%;
+  width: 35%;
   cursor: pointer;
   -webkit-appearance: none;
 }

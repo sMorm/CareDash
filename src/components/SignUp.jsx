@@ -24,7 +24,7 @@ class SignUp extends Component {
       password,
       confirmPassword
     } = this.state;
-    if(password != confirmPassword){
+    if(password !== confirmPassword){
       this.setState({ incorrectPass: true })
     }
   }
@@ -82,7 +82,6 @@ class SignUp extends Component {
           </form>
         </div>
         <hr />
-        <div style={{height: '100px'}}/>
       </div>
     )
   }

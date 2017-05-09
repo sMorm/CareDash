@@ -53,16 +53,19 @@
 }
 
 .DropDownContainer ul {
+  position: fixed;
+  z-index: 3;
   border-radius: 5px;
   background-color: white;
-  width: 95%;
+  width: 15%;
+  max-width: 170px;
   margin: 0 auto;
   padding: 5px 20px;
   border: solid 1px #EEE;
+  animation: fade-right 0.5s forwards;
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
-  animation: fade-down 0.5s forwards;
 }
 
 .DropDownContainer li {
@@ -101,14 +104,16 @@
   background-color: white;
   z-index: 1;
   right: 0;
+  animation: fade-in 0.5s forwards;
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
   -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
 
-.MobileDropDown li {
-  padding: 0;-webkit-padding-start: 0;
-  list-style-type: none;
-  margin: 10px 0px;
-  animation: fade-down 0.5s forwards;
+.DropDownLinks {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #00829e;
+  margin: 15px 0px;
 }

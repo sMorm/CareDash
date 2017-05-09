@@ -1,7 +1,7 @@
 // Dependencies
 import React, { Component } from 'react';
 import Media from 'react-media';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 // Styles
 import './styles/Navigation.css'
@@ -25,7 +25,6 @@ class Navigation extends Component {
   }
   toggleDropDown() {
     this.setState({ showDropDown: !this.state.showDropDown })
-
   }
   render(){
     return (
@@ -46,14 +45,27 @@ class Navigation extends Component {
                   this.state.showMobileMenu
                   ? (
                       <div className="MobileDropDown">
-                        <ul>
-                          <li>Primary Care</li>
-                          <li>Dentist</li>
-                          <li>Pediatrician</li>
-                          <li>OG/GYN</li>
-                          <li>Optometrist</li>
-                          <li>All Doctors</li>
-                        </ul>
+  
+                          <Link 
+                          to="/" 
+                          className="DropDownLinks" 
+                          onClick={this.toggleMobileMenu}>
+                            Home
+                          </Link>
+
+                          <Link 
+                          to="/articles" 
+                          className="DropDownLinks"
+                          onClick={this.toggleMobileMenu}>
+                            Articles
+                          </Link>
+                          
+                          <Link 
+                          to="/review-your-doctor" 
+                          className="DropDownLinks"
+                          onClick={this.toggleMobileMenu}>
+                            Write a Review
+                          </Link>
                       </div>
                     )
                   : null

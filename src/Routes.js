@@ -11,6 +11,7 @@ import Navigation from './components/Navigation.jsx'
 import Home from './components/Home.jsx'
 import Articles from './components/Articles.jsx'
 import Review from './components/Review.jsx'
+import Footer from './components/Footer.jsx'
 
 // Styles
 import './components/styles/Animations.css'
@@ -28,6 +29,7 @@ class Routes extends Component {
             <Route exact path="/articles" component={ Articles } />
             <Route path="/review-your-doctor" component={ Review } />
           </Switch>
+          <Footer />
         </div>
       </Router>
     );

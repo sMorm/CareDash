@@ -1,1 +1,50 @@
-Footer.css
+.FooterBackground {
+  width: 100%;
+  background-color: #F0F0F0;
+  margin-top: -8px;
+}
+
+.FooterContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.LinkContainer {
+  margin-top: 13px;
+}
+
+.FooterLink {
+  display: block;
+  text-decoration: none;
+  padding: 0;
+  color: #555;
+}
+
+
+.SpecialistsLinks ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.SpecialistsLinks li {
+  color: #555;
+}
+
+.FooterContainer img {
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px 5px;
+}
+
+@media (max-width: 800px) {
+  .FooterContainer {
+    display: block;
+    text-align: center;
+    margin-top: -1.2rem;
+  }
+  .FooterContainer hr {
+    width: 70%;
+  }
+}
