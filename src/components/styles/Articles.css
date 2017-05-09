@@ -36,6 +36,9 @@
   .ArticleContainer {
     width: 100%;
   }
+  .ArticleContainer h1 {
+    font-size: 25px;
+  }
   .SampleArticle {
     width: 100%;
   }
