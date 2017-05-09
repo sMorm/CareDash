@@ -92,7 +92,7 @@ class Review extends Component {
           <DoctorProfile
           img={Doctor2}
           name="Dr. Brandon Karl"
-          specialty="OG/GYN"/>
+          specialty="OB/GYN"/>
           <DoctorProfile
           img={Doctor3}
           name="Dr. Connor Emma"

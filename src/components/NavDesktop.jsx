@@ -13,7 +13,7 @@ const NavDesktop = (props) => {
       </NavLink>
       <div  className="DropDownContainer">
         <p onClick={props.toggleDropDown} className="NavLink Drop">
-          Ratings & Reviews &#9660;
+          Ratings & Reviews &#9661;
         </p>
         {
           props.showDropDown
@@ -48,7 +48,7 @@ const NavDesktop = (props) => {
                     className="DropDownLinks Desktop"
                     to='/review-your-doctor'
                     onClick={props.toggleDropDown}>
-                      OG/GYN
+                      OB/GYN
                     </Link>
                   </li>
                   <li>
